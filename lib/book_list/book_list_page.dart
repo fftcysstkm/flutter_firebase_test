@@ -1,13 +1,10 @@
 import 'package:book_list_sample/book_list/book_list_model.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../domain/book.dart';
 
 class BookListPage extends StatelessWidget {
-  final Stream<QuerySnapshot> _usersStream =
-      FirebaseFirestore.instance.collection('books').snapshots();
 
   @override
   Widget build(BuildContext context) {
